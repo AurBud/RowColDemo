@@ -21,6 +21,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.layout.LastBaseline
 
 @Composable
 fun TextCell(text: String, modifier: Modifier = Modifier) {
@@ -60,8 +61,8 @@ fun GreetingPreview() {
 fun MainScreen(modifier: Modifier = Modifier) {
     Row {
         Text(
-            text = "Large Text",
-            Modifier.alignByBaseline(),
+            text = "Large Text\n\nMore Text",
+            Modifier.alignBy(LastBaseline),
             fontSize = 40.sp,
             fontWeight = FontWeight.Bold
         )
