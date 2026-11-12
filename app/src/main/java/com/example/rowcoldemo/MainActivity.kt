@@ -58,9 +58,9 @@ fun GreetingPreview() {
 
 @Composable
 fun MainScreen(modifier: Modifier = Modifier) {
-    Column(
-        verticalArrangement = Arrangement.Bottom,
-        modifier = modifier.height(400.dp)
+    Row(
+        horizontalArrangement = Arrangement.SpaceEvenly,
+        modifier = modifier.width(1000.dp)
     ) {
         TextCell("1")
         TextCell("2")
